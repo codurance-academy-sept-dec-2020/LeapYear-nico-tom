@@ -10,4 +10,9 @@ public class LeapYearShould {
         boolean isLeapYear = LeapYear.isALeapYear(3);
         Assertions.assertFalse(isLeapYear);
     }
+
+    @Test public void return_true_when_divisible_by_four() {
+        boolean isLeapYear = LeapYear.isALeapYear(4);
+        Assertions.assertTrue(isLeapYear);
+    }
 }
