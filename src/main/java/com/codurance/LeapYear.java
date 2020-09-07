@@ -2,7 +2,8 @@ package com.codurance;
 
 public class LeapYear {
     public static Boolean isALeapYear(int year) {
-        if(isDivisibleBy(year,4)) {
+        if (isDivisibleBy(year, 100) && !isDivisibleBy(year, 400)) return false;
+        if (isDivisibleBy(year, 4)) {
             return true;
         }
         return false;
